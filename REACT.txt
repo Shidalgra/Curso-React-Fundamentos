@@ -511,3 +511,20 @@ export default App;|
               pero puede volverse muy compleja
 
           * useEffect(parametro 1 funcion a ejecutar, parametro 2 cuando se ejecutara la funcion)
+
+
+          el ejemplo de codigo es maso menos así:
+
+          useEffect (()=> {
+            
+            console.log("Esto se ejecuta al montaje")
+            
+            return()=>{                         // este no es siempre, es decir podemos ponerlo pero es opcional
+
+              console.log("Esto se ejecuta al desmontaje")
+
+            }
+          },[]);
+
+          ahora lo veremos mas a fondo...
+
