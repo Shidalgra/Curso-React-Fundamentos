@@ -488,3 +488,26 @@ export default App;|
         Persistencia: Mantiene el valor entre renderizaciones
 
         Sintaxis: const ref = useRef(estadoInicial)
+
+
+        ¿Que es useEffect?
+
+          * Hook para realizar operacion durante las etapas del ciclo de vida de un componente
+          * Etapas de un componente:
+            - Montaje
+                * Es cuando se comienza a visualizar un componente
+            - Update
+                * Actualizarlo, cuando cambia un estado o propiedad de un componente 
+            - Desmontaje
+                * Cuando un componente se deja de visualizar
+                
+            cuando renderizamos un componente, pueden llegar a ocurrir cualquiera de estas operaciones
+            tanto del componente en el que esten ocurriendo, como de sus decendientes.
+
+        ¿Cual es la sintaxis de este hook?
+
+        - tiene dos parametros
+            *-el primero es necesario y el segundo es opcional, puede escucharse Facilidad
+              pero puede volverse muy compleja
+
+          * useEffect(parametro 1 funcion a ejecutar, parametro 2 cuando se ejecutara la funcion)
