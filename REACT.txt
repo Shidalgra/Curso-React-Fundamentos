@@ -45,9 +45,11 @@ PRIMEROS PASOS
 		
 		* Set-ExecutionPolicy -Scope CurrentUser unrestricted
 	
+            * npm install styled-components #Si queremos hacer estilos empaquetados con los componentes--- hay que instalarlo donde tengamos el proyecto
             * npm install --save-dev ajv@^7 # el elevado " ^ " se hace con alt+94
             * npm install prop-types --save
             * npm install --save-dev web-vitals
+            
             * npm install @mui/material --force
             * npm install @material-ui/core --legacy-peer-deps
             * npm i @testing-library/react-native@latest react-test-renderer --save --legacy-peer-deps
