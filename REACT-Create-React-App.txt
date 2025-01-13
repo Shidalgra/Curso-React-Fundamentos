@@ -566,3 +566,66 @@ function App() {
 export default App;
                                                                                                         |
 ---------------------------------------------------------------------------------------------------------          
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+                                                                                                        |
+import './App.css';
+import parrafos from "./data/quijote.json"
+import { useState, useEffect } from "react"
+import { Boton, RowDiv } from './BotonesStyled';
+
+function App() {
+
+  const [parrafoActual, setParrafoActual] = useState(0);
+
+  //Este es un ejemplo de consola con los parrafos activos que hay
+  //useEffect(() => {
+  //  console.log(`Estas leyendo el párrafo en la posicion ${parrafoActual + 1}`);
+  //}, [parrafoActual]);
+
+  useEffect(() => {
+    //Math.random generara un numero de 0 a 1... pero nunca llegara al 1 lo que hara sera un 0.9999 y si multiplicamos X 256 este nunca llegara a 256... el llegara a 255.9999 por esto le ponemos el Math.floor para que lo redondee a la que esta abajo.. 255  
+    const colorAleatorio = `rgb(${Math.floor(Math.random() * 256)}, 
+                              ${Math.floor(Math.random() * 256)}, 
+                              ${Math.floor(Math.random() * 256)})`; // se hace tres veces para que sea el 255 de cada colo, rojo, verde, azul 
+
+    document.getElementById("CambiaColor").style.backgroundColor = colorAleatorio; //hace un cambio de color cada vez que doy clic en anterior o siguiente
+
+    //return()=>{                         // este no es siempre, es decir podemos ponerlo pero es opcional
+
+    //  alert("Esto se ejecuta al desmontaje")
+
+    //}
+
+  }, [parrafoActual]);
+
+
+  const SiguienteParrafo = () => {
+    if (parrafoActual !== parrafos.length - 1) setParrafoActual(parrafoActual + 1);
+  }
+
+  const ParrafoAnterior = () => {
+    if (parrafoActual !== 0) setParrafoActual(parrafoActual - 1);
+  }
+
+  return (
+    <div>
+      <p className='parrafo'>{parrafos[parrafoActual]}</p>
+      <RowDiv>
+        <Boton onClick={ParrafoAnterior}>Anterior</Boton>
+        <Boton onClick={SiguienteParrafo}>Siguiente</Boton>
+      </RowDiv>
+      <div className='cambiaColor' id='CambiaColor'>
+          <p>Cambia color cuando hago clic en siguiente o anterior</p>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+                                                                                                        |
+---------------------------------------------------------------------------------------------------------
+                                                                                                        
