@@ -526,5 +526,43 @@ export default App;|
             }
           },[]);
 
-          ahora lo veremos mas a fondo...
+          ahora lo veremos mas a fondo... 542
+          
+---------------------------------------------------------------------------------------------------------
+                                                                                                        |
+import './App.css';
+import parrafos from "./data/quijote.json"
+import { useState, useEffect } from "react"
+import { Boton, RowDiv } from './BotonesStyled';
 
+function App() {
+
+  const [parrafoActual, setParrafoActual] = useState(0);
+
+  useEffect(()=>{
+    console.log(`Estas leyendo el párrafo en la posicion ${parrafoActual+1}`);
+  },[parrafoActual]);
+  
+
+  const SiguienteParrafo = () => {
+    if (parrafoActual !== parrafos.length - 1) setParrafoActual(parrafoActual + 1);
+  }
+
+  const ParrafoAnterior = () => {
+    if (parrafoActual !== 0) setParrafoActual(parrafoActual - 1);
+  }
+
+  return (
+    <div>
+      <p className='parrafo'>{parrafos[parrafoActual]}</p>
+      <RowDiv>
+        <Boton onClick={ParrafoAnterior}>Anterior</Boton>
+        <Boton onClick={SiguienteParrafo}>Siguiente</Boton>
+      </RowDiv>
+    </div>
+  );
+}
+
+export default App;
+                                                                                                        |
+---------------------------------------------------------------------------------------------------------          
