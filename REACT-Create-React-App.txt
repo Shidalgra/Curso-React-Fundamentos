@@ -50,7 +50,13 @@ PRIMEROS PASOS
             * npm install prop-types --save
             * npm install --save-dev web-vitals
 	    * npm install react-bootstrap bootstrap
-	    * npm install react-bootstrap-icons --save 
+	    * npm install react-bootstrap-icons --save
+            * npm i react-multi-carousel --save
+
+	    *- podemos encontrar muchas cosas en estas direcciones 
+		* https://www.npmjs.com/
+
+		
             
             * npm install @mui/material --force
             * npm install @material-ui/core --legacy-peer-deps
