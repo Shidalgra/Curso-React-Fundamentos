@@ -56,6 +56,15 @@ PRIMEROS PASOS
 	    *- podemos encontrar muchas cosas en estas direcciones 
 		* https://www.npmjs.com/
 
+
+	    * Para hacer deploy en github necesitamos hacer lo siguiente en el package.json de nuestra app
+		*-subir como siempre la aplicacion
+		*-debajo de name en el package.json ingresar las siguientes lineas
+			* "homepage": "https://serhidalgra.github.io/PortfolioWebsite/",
+		*-en el apartado scripts abajo de todo en el scripts ingresar estas otras
+			* "predeploy": "npm run build",
+    			* "deploy": "gh-pages -d build"
+
 		
             
             * npm install @mui/material --force
