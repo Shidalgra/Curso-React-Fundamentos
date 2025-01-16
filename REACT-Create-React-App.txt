@@ -59,11 +59,19 @@ PRIMEROS PASOS
 
 	    * Para hacer deploy en github necesitamos hacer lo siguiente en el package.json de nuestra app
 		*-subir como siempre la aplicacion
+		*-despues de subirla, instalar lo siguiente en la raiz de la app
+			* npm install gh-pages --save-dev
 		*-debajo de name en el package.json ingresar las siguientes lineas
-			* "homepage": "https://serhidalgra.github.io/PortfolioWebsite/",
+			* "homepage": "https://serhidalgra.github.io/nombredelrepositorio/",
 		*-en el apartado scripts abajo de todo en el scripts ingresar estas otras
 			* "predeploy": "npm run build",
     			* "deploy": "gh-pages -d build"
+		*-Una vez hecho esto damos el siguiente comando en la raiz de la app
+			*- npm run deploy
+
+
+	    * Si queremos seguir trabajando en ella local, debemos quitar esas tres lineas que agregamos al package.json, cuando queramos volver a subir solamente hay
+              que ponerlas de nuevo y volver a dar el comando nom run deploy
 
 		
             
