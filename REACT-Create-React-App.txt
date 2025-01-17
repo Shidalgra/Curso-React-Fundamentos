@@ -53,7 +53,11 @@ PRIMEROS PASOS
 	    * npm install react-bootstrap-icons --save
             * npm i react-multi-carousel --save
 	    * npm install redux --save
-	    * npm install express cors nodemailer  // este es para hacer los botones de submit para enviar un email desde una pagina... luego debemos hacer el server.js en la raiz del proyecto, en github en el 					   	      cv de react aparece la configuracion
+
+
+	    * npm install express cors nodemailer
+	    * npm i react-mailchimp-subscribe
+					// este es para hacer los botones de submit para enviar un email desde una pagina... luego debemos hacer el server.js en la raiz del proyecto, en github en el 				        	 	   cv de react aparece la configuracion
 
 	    *- podemos encontrar muchas cosas en estas direcciones 
 		* https://www.npmjs.com/
