@@ -52,6 +52,7 @@ PRIMEROS PASOS
 	    * npm install react-bootstrap bootstrap
 	    * npm install react-bootstrap-icons --save
             * npm i react-multi-carousel --save
+	    * npm install redux --save
 
 	    *- podemos encontrar muchas cosas en estas direcciones 
 		* https://www.npmjs.com/
