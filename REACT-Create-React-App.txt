@@ -53,10 +53,11 @@ PRIMEROS PASOS
 	    * npm install react-bootstrap-icons --save
             * npm i react-multi-carousel --save
 	    * npm install redux --save
-	    * npm install animate.css --save  //agregamos esto al Banner del proyecto del CV en react
+	    * npm install animate.css --save  //agregamos esto al Banner del proyecto del CVreact para hacer animaciones ejm: https://animate.style/
+	    * npm install --save react-on-screen //esto para que reconozca el react on screen ejm: https://www.npmjs.com/package/react-on-screen 
 	
 
-	    * para poder enviar un correo instalamos lo siguiente y configuramos tambien emailjs en la página estos comandos son para la raiz de la app:		
+	    * para poder enviar un correo instalamos lo siguiente y configuramos tambien emailjs en la página estos comandos son para raiz de la app:		
 		* npm install --save @emailjs/browser
 		* npm install @emailjs/browser axios
 	    
